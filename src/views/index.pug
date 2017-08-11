@@ -6,8 +6,10 @@ head
   meta(http-equiv="X-UA-Compatible", content="ie=edge")
   link(rel="stylesheet", href="css/styles.css")    
   link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Noto+Sans")
-  link(rel="stylesheet", href="css/hover-min.css")
-  title Provecho | Restaurante  
+  //link(rel="stylesheet", href="css/hover-min.css")
+  link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+  link(rel="stylesheet", href="css/normalize.css")
+  title A Su Provecho | Restaurante  
 body
   header.Header
     .layer
@@ -21,28 +23,44 @@ body
             a.Menu-Link(href="#") Historia
           li.Menu-Item
             a.Menu-Link(href="#") Contacto
-      h1.Head-Tittle Provecho
+      h1.Head-Tittle A Su Provecho
       h2.Head-SubTittle Restaurante | Comidas para Llevar  
   section.Info-Wrapper
     .Info-item
       .Inf-item1
-        .Inf-layer        
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?
-          button.hvr-grow(type="submit") Nuestros Productos
+        .Inf-layer
+          .Info-thumbnail
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?
+            button.hvr-grow(type="submit") Productos
     .Info-item
       .Inf-item2
-        .Inf-layer        
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?
-          button.hvr-grow(type="submit") Ver Carta
+        .Inf-layer
+          .Info-thumbnail        
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?
+            button.hvr-grow(type="submit") Ver Carta
     .Info-item
       .Inf-item3
         .Inf-layer
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?
-          button.hvr-grow(type="submit") Conoce al Chef
-  section.Services
+          .Info-thumbnail
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?
+            button.hvr-grow(type="submit") Conoce al Chef
+  .Personal
+    .Pers-text
+      p Los mejores chef de diversos paises para brindar una noche inolvidable
+  .Services
     h1.Serv-Tittle Nuestros Servicios
     h3.Serv-Sbtittle Brindamos servicios de comida rápida para llevar, tenedor libre los fines de semana, carta abierta durante la semana.
-    img(src="", alt="")
+    .Serv-Logos
+      .Serv-Item
+        i.fa.fa-cutlery.Serv-Ico.Ico1
+      .Serv-Item
+        i.fa.fa-phone.Serv-Ico.Ico2
+      .Serv-Item
+        i.fa.fa-coffee.Serv-Ico.Ico3
   section.Reservation
     h1.Reserv-Tittle Haga su reservación ahora
-    button.btn.Reserv-btn(type="submit") Hacer Reservación
+    button.Reserv-btn(type="submit") Hacer Reservación
+  hr
+  footer.MainFooter
+    p A Su Provecho &copy 2017
+  script(src="js/functions.js")
