@@ -18,48 +18,49 @@ body
           li.Menu-Item
             a.Menu-Link(href="#") Inicio
           li.Menu-Item
-            a.Menu-Link(href="#") Carta
+            a.Menu-Link(href="#Servicios") Servicios
           li.Menu-Item
-            a.Menu-Link(href="#") Historia
+            a.Menu-Link(href="#") Nuestros Chefs
           li.Menu-Item
-            a.Menu-Link(href="#") Contacto
+            a.Menu-Link(href="#") Reservaciones
       h1.Head-Tittle A Su Provecho
       h2.Head-SubTittle Restaurante | Comidas para Llevar  
-  section.Info-Wrapper
+  section.Info-Wrapper#Servicios
     .Info-item
       .Inf-item1
         .Inf-layer
           .Info-thumbnail
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?
-            button.hvr-grow(type="submit") Productos
+            p Comidas para llevar, envíos a domicilio, variedad de menus vegetarianos y mucho más. 
+            button.hvr-grow(type="submit") Envíos
     .Info-item
       .Inf-item2
         .Inf-layer
           .Info-thumbnail        
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?
+            p Amplia carta para deleitar nuestros sabores desde platos dietéticos hasta exquicitas variedades de pastas.
             button.hvr-grow(type="submit") Ver Carta
     .Info-item
       .Inf-item3
         .Inf-layer
           .Info-thumbnail
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?
+            p Trabajamos con chefs internacionales para ocaciones especiales para brindarle lo mejor de lo mejor en cada noche.
             button.hvr-grow(type="submit") Conoce al Chef
-  .Personal
+  .Personal#Cheff
     .Pers-text
       p Los mejores chef de diversos paises para brindar una noche inolvidable
   .Services
     h1.Serv-Tittle Nuestros Servicios
     h3.Serv-Sbtittle Brindamos servicios de comida rápida para llevar, tenedor libre los fines de semana, carta abierta durante la semana.
-    .Serv-Logos
-      .Serv-Item
-        i.fa.fa-cutlery.Serv-Ico.Ico1
-      .Serv-Item
-        i.fa.fa-phone.Serv-Ico.Ico2
-      .Serv-Item
-        i.fa.fa-coffee.Serv-Ico.Ico3
   section.Reservation
     h1.Reserv-Tittle Haga su reservación ahora
-    button.Reserv-btn(type="submit") Hacer Reservación
+    .FormWrapper
+      form        
+        input(type="text" placeholder="Nombre")
+        br
+        input(type="text" placeholder="Email")
+        br
+        textarea(name="", cols="40", rows="10")
+        br
+        a.Reserv-btn(href="#") Hacer Reservación    
   hr
   footer.MainFooter
     p A Su Provecho &copy 2017
