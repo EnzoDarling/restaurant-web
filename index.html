@@ -17,22 +17,22 @@
       <nav class="Menu-Nav">
         <ul class="Menu-list">
           <li class="Menu-Item"><a class="Menu-Link" href="#">Inicio</a></li>
-          <li class="Menu-Item"><a class="Menu-Link" href="#">Carta</a></li>
-          <li class="Menu-Item"><a class="Menu-Link" href="#">Historia</a></li>
-          <li class="Menu-Item"><a class="Menu-Link" href="#">Contacto</a></li>
+          <li class="Menu-Item"><a class="Menu-Link" href="#Servicios">Servicios</a></li>
+          <li class="Menu-Item"><a class="Menu-Link" href="#">Nuestros Chefs</a></li>
+          <li class="Menu-Item"><a class="Menu-Link" href="#">Reservaciones</a></li>
         </ul>
       </nav>
       <h1 class="Head-Tittle">A Su Provecho</h1>
       <h2 class="Head-SubTittle">Restaurante | Comidas para Llevar  </h2>
     </div>
   </header>
-  <section class="Info-Wrapper">
+  <section class="Info-Wrapper" id="Servicios">
     <div class="Info-item">
       <div class="Inf-item1">
         <div class="Inf-layer">
           <div class="Info-thumbnail">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?</p>
-            <button class="hvr-grow" type="submit">Productos</button>
+            <p>Comidas para llevar, envíos a domicilio, variedad de menus vegetarianos y mucho más. </p>
+            <button class="hvr-grow" type="submit">Envíos</button>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
       <div class="Inf-item2">
         <div class="Inf-layer">
           <div class="Info-thumbnail">       
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?</p>
+            <p>Amplia carta para deleitar nuestros sabores desde platos dietéticos hasta exquicitas variedades de pastas.</p>
             <button class="hvr-grow" type="submit">Ver Carta</button>
           </div>
         </div>
@@ -51,14 +51,14 @@
       <div class="Inf-item3">
         <div class="Inf-layer">
           <div class="Info-thumbnail">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iure autem sunt! Harum quod error itaque, provident debitis aperiam incidunt sed, neque quae ipsa totam quidem mollitia recusandae eum animi?</p>
+            <p>Trabajamos con chefs internacionales para ocaciones especiales para brindarle lo mejor de lo mejor en cada noche.</p>
             <button class="hvr-grow" type="submit">Conoce al Chef</button>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <div class="Personal">
+  <div class="Personal" id="Cheff">
     <div class="Pers-text">
       <p>Los mejores chef de diversos paises para brindar una noche inolvidable</p>
     </div>
@@ -66,15 +66,16 @@
   <div class="Services">
     <h1 class="Serv-Tittle">Nuestros Servicios</h1>
     <h3 class="Serv-Sbtittle">Brindamos servicios de comida rápida para llevar, tenedor libre los fines de semana, carta abierta durante la semana.</h3>
-    <div class="Serv-Logos">
-      <div class="Serv-Item"><i class="fa fa-cutlery Serv-Ico Ico1"></i></div>
-      <div class="Serv-Item"><i class="fa fa-phone Serv-Ico Ico2"></i></div>
-      <div class="Serv-Item"><i class="fa fa-coffee Serv-Ico Ico3"></i></div>
-    </div>
   </div>
   <section class="Reservation">
     <h1 class="Reserv-Tittle">Haga su reservación ahora</h1>
-    <button class="Reserv-btn" type="submit">Hacer Reservación</button>
+    <div class="FormWrapper">
+      <form>       
+        <input type="text" placeholder="Nombre"/><br/>
+        <input type="text" placeholder="Email"/><br/>
+        <textarea name="" cols="40" rows="10"></textarea><br/><a class="Reserv-btn" href="#">Hacer Reservación    </a>
+      </form>
+    </div>
   </section>
   <hr/>
   <footer class="MainFooter">
