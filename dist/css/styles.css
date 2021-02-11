@@ -216,19 +216,37 @@ body {
   border-radius: 20px;
   border: 0;
 }
+.Test-card .card1 {
+  background-image: url("../img/person1.jpg");
+}
+.Test-card .card2 {
+  background-image: url("../img/person2.jpg");
+}
+.Test-card .card3 {
+  background-image: url("../img/person3.jpg");
+}
+.Test-card .card4 {
+  background-image: url("../img/person4.jpg");
+}
+.Test-card .card5 {
+  background-image: url("../img/person5.jpg");
+}
+.Test-card .card6 {
+  background-image: url("../img/person6.jpg");
+}
 .Testimonials .Test-card .test-card-img {
-  max-width: 100%;
-  border-radius: 50%;
+  background-size: cover;
   margin: 15px auto 0;
-  width: 120px;
-  height: 120px;
-  box-shadow: 0 8px 10px -4px var(--red);
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 8px 10px -4px var(--softblack);
   border-radius: 100px;
 }
 .Testimonials .Test-card h5 {
-  color: #cc2a41;
+  color: var(--softblack);
   font-size: 21px;
   line-height: 1.3;
+  margin: 20px 0px;
 }
 .Testimonials .Test-card p {
   font-size: 18px;
@@ -245,11 +263,11 @@ body {
 .Testimonials .center h5 {
   font-size: 24px;
 }
-.Testimonials .center .test-card-img {
+/* .Testimonials .center .test-card-img {
   max-width: 100%;
   height: 200px;
   width: 200px;
-}
+} */
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
