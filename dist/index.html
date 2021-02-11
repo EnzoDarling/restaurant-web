@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <link rel="stylesheet" href="css/styles.css"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans"/>
-  <!--link(rel="stylesheet", href="css/hover-min.css")-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>A Su Provecho | Restaurante  </title>
 </head>
 <body>
@@ -25,22 +24,22 @@
           <li class="Menu-Item"><a class="Menu-Link" href="#">Reservaciones</a></li>
         </ul>
       </nav>
-      <h1 class="Head-Tittle">A Su Provecho</h1>
-      <h2 class="Head-SubTittle">Restaurante | Comidas para Llevar  </h2>
+      <h1 class="Head-Tittle" data-aos="fade-right">A Su Provecho</h1>
+      <h2 class="Head-SubTittle" data-aos="fade-left">Restaurante | Comidas para Llevar  </h2>
     </div>
   </header>
   <!-- INFO CARDS SECTION -->
   <section class="Info-Section" id="Servicios">
     <h1>Algunos de nuestros servicios</h1>
     <section class="Info-Wrapper">
-      <div class="Info-item">
+      <div class="Info-item" data-aos="fade-up">
         <div class="Inf-item1"></div>
         <div class="Info-thumbnail">
           <p>Comidas para llevar, envíos a domicilio, variedad de menus vegetarianos y mucho más. </p>
           <button class="hvr-grow" type="submit">Envíos</button>
         </div>
       </div>
-      <div class="Info-item">
+      <div class="Info-item" data-aos="fade-up">
         <div class="Inf-item2">       
         </div>
         <div class="Info-thumbnail">       
@@ -48,7 +47,7 @@
           <button class="hvr-grow" type="submit">Ver Carta</button>
         </div>
       </div>
-      <div class="Info-item">
+      <div class="Info-item" data-aos="fade-up">
         <div class="Inf-item3">        
         </div>
         <div class="Info-thumbnail">
@@ -59,13 +58,13 @@
     </section>
   </section>
   <!-- CHEFF PERSONAL -->
-  <div class="Personal" id="Cheff">
+  <div class="Personal" id="Cheff" data-aos="flip-left">
     <div class="Pers-text">
       <p>Los mejores chef de diversos paises para brindar una noche inolvidable</p>
     </div>
   </div>
   <!-- TESTIMONIOS -->
-  <section class="Testimonials">
+  <section class="Testimonials" data-aos="zoom-in">
     <h1>Algunos de nuestros clientes</h1>
     <div class="owl-carousel owl-carousel1 owl-theme">
       <div class="Test-card">
@@ -132,15 +131,15 @@
         </form>
       </div>
       <div class="Resv-Socials">
-          <div class="Resv-Icon">
+          <div class="Resv-Icon" data-aos="zoom-out-up">
             <i class="fab fa-instagram"></i>
             <p>@asu_provecho</p>
           </div>          
-          <div class="Resv-Icon">
+          <div class="Resv-Icon" data-aos="zoom-out-up">
             <i class="fab fa-facebook-f"></i>
             <p>@asuprovecho</p>
           </div>
-          <div class="Resv-Icon">
+          <div class="Resv-Icon" data-aos="zoom-out-up">
             <i class="fab fa-twitter"></i>
             <p>@asuprovecho</p>
           </div>
@@ -153,5 +152,12 @@
   </footer>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/functions.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 500
+    });
+  </script>
 </body>

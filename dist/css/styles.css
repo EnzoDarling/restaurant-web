@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
   background-color: #eee;
 }
 /* ----------------------- ENCABEZADO ---------------- */
@@ -239,7 +239,7 @@ body {
   margin: 15px auto 0;
   width: 200px;
   height: 200px;
-  box-shadow: 0 8px 10px -4px var(--softblack);
+  box-shadow: 0 2px 10px 2px var(--softblack);
   border-radius: 100px;
 }
 .Testimonials .Test-card h5 {
@@ -263,11 +263,6 @@ body {
 .Testimonials .center h5 {
   font-size: 24px;
 }
-/* .Testimonials .center .test-card-img {
-  max-width: 100%;
-  height: 200px;
-  width: 200px;
-} */
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
