@@ -258,21 +258,24 @@ body {
 
 /* ------------ RESERVACIONES ----------- */
 .Reservation {
-  background-color: var(--cream);
+  background-color: var(--softblack);
   height: 700px;
   text-align: center;
+}
+.Resv-Container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .Reservation .Reserv-Tittle {
   align-self: center;
   padding: 50px 0;
   font-size: 3em;
   margin: 0;
-  color: var(--softblack);
+  color: #ccc;
 }
 .Reservation .FormWrapper {
-  height: 100%;
+  text-align: center;
+  flex-basis: 50%;
 }
 .Reservation .FormWrapper form {
   align-self: center;
@@ -284,32 +287,52 @@ body {
 }
 .Reservation .FormWrapper form input,
 .Reservation .FormWrapper form textarea {
-  background: rgba(53, 19, 48, 0.5);
-  border: solid 2px rgba(0, 0, 0, 0.8);
+  background: rgba(30, 30, 30, 0.8);
+  border: solid 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  color: var(--softblack);
+  color: #ccc;
   margin: 15px 0px;
 }
+.Reservation .FormWrapper form input::placeholder,
+.Reservation .FormWrapper form textarea::placeholder {
+  padding: 0px 10px;
+}
+
 .Reservation .Reserv-btn {
-  border: solid 2px rgba(0, 0, 0, 0.8);
   text-decoration: none;
-  background-color: var(--softblack);
+  background-color: var(--red);
   font-family: "Noto Sans", sans-serif;
   color: white;
   padding: 10px 30px;
-  margin: 50px;
+  margin: 20px 10px;
   cursor: pointer;
 }
 .Reservation .Reserv-btn:hover {
-  background-color: #351330;
+  background-color: var(--cream);
 }
-
-hr {
-  border: 1px solid rgba(0, 0, 0, 0.8);
+.Resv-Socials {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.Resv-Socials .Resv-Icon i {
+  font-size: 3em;
+  display: flex;
+  flex-direction: row;
+}
+.Resv-Icon {
+  display: flex;
+  align-items: center;
+}
+.Resv-Icon i,
+.Resv-Icon p {
+  color: var(--red);
+  margin: 0px 10px;
 }
 /* ----------------- FOOTER PRINCIPAL ------------------ */
 .MainFooter {
-  background-color: var(--softblack);
+  background-color: var(--red);
   height: 100px;
 }
 .MainFooter p {
